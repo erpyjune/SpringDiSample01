@@ -20,5 +20,8 @@ public class App
         System.out.println("age    : " + user.userProperty.getAge());
         System.out.println("height : " + user.userProperty.getHeight());
         System.out.println("weight : " + user.userProperty.getWeight());
+        System.out.println("hobby : " + user.userInfo.getHobby());
+        System.out.println("job : " + user.userInfo.getJob());
+        System.out.println("sex : " + user.userInfo.getSex());
     }
 }

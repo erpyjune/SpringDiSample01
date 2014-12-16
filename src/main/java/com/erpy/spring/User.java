@@ -7,6 +7,7 @@ public class User {
     private String userId;
     private String userName;
     UserProperty userProperty;
+    UserInfo userInfo;
 
     /*
     public User (String id, String name) {
@@ -33,5 +34,9 @@ public class User {
 
     public void setUserProperty(UserProperty userProperty) {
         this.userProperty = userProperty;
+    }
+
+    public void setUserInfo(UserInfo userInfo) {
+        this.userInfo = userInfo;
     }
 }

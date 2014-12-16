@@ -9,10 +9,17 @@
               <property name="weight" value="68" />
        </bean>
 
+       <bean id="userInfo" class="com.erpy.spring.UserInfo">
+              <constructor-arg value="programmer" />
+              <constructor-arg value="climb mountain" />
+              <constructor-arg value="male" />
+       </bean>
+
        <bean id="userBean" class="com.erpy.spring.User">
               <property name="userId" value="kaka" />
               <property name="userName" value="Lee Myung-Park" />
               <property name="userProperty" ref="userProperty" />
+              <property name="userInfo" ref="userInfo" />
        </bean>
 
 </beans>
