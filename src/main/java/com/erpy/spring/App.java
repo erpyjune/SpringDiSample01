@@ -17,11 +17,11 @@ public class App
 
         System.out.println("id     : " + user.getUserId());
         System.out.println("name   : " + user.getUserName());
-        System.out.println("age    : " + user.userProperty.getAge());
-        System.out.println("height : " + user.userProperty.getHeight());
-        System.out.println("weight : " + user.userProperty.getWeight());
-        System.out.println("hobby : " + user.userInfo.getHobby());
-        System.out.println("job : " + user.userInfo.getJob());
-        System.out.println("sex : " + user.userInfo.getSex());
+        System.out.println("age    : " + user.getUserProperty().getAge());
+        System.out.println("height : " + user.getUserProperty().getHeight());
+        System.out.println("weight : " + user.getUserProperty().getWeight());
+        System.out.println("hobby : " + user.getUserInfo().getHobby());
+        System.out.println("job : " + user.getUserInfo().getJob());
+        System.out.println("sex : " + user.getUserInfo().getSex());
     }
 }

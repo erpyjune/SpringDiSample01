@@ -15,6 +15,17 @@
               <constructor-arg value="male" />
        </bean>
 
+       <bean id="addProperty" class="com.erpy.spring.AddProperty">
+              <property name="prop">
+                     <props>
+                            <prop key="server.address">localhost</prop>
+                            <prop key="server.port">9900</prop>
+                            <prop key="server.id">erpy</prop>
+                            <prop key="server.pass">1234</prop>
+                     </props>
+              </property>
+       </bean>
+
        <bean id="userBean" class="com.erpy.spring.User">
               <property name="userId" value="kaka" />
               <property name="userName" value="Lee Myung-Park" />
