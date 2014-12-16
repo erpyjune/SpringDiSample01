@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id="userProperty" class="com.erpy.spring.UserProperty">
+              <property name="age" value="43" />
+              <property name="height" value="165" />
+              <property name="weight" value="68" />
+       </bean>
+
+       <bean id="userBean" class="com.erpy.spring.User">
+              <property name="userId" value="kaka" />
+              <property name="userName" value="Lee Myung-Park" />
+              <property name="userProperty" ref="userProperty" />
+       </bean>
+
+</beans>
